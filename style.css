@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-image: url("images/bg-pattern-top-desktop.jpg") no-repeat bottom; */
+}
+
+body {
+  margin: 2%;
+  background: url("images/bg-pattern-top-desktop.svg") no-repeat left top, url("images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
+  font-size: 15px;
+  padding: 0;
+  font-family: spartan, sans-serif;
+}
+
+/* Introductory  */
+.initial-assessment {
+  display: flex;
+  flex-direction: row;
+  /* margin-bottom: 10%; */
+}
+
+.opening-segment {
+  text-align: left;
+  width: 50%;
+  padding: 5%;
+}
+
+.initial-header {
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 0% 15%;
+  margin-bottom: 5%;
+  color: hsl(300, 43%, 22%);
+}
+
+.icon-star img {
+  width: 18px;
+  margin-top: 5%;
+}
+.icon-star-paragraph {
+  color: hsl(300, 43%, 22%);
+  font-size: 0.98rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+
+
+.initial-header {
+  font-size: 3.5rem;
+    padding: 0%;
+}
+
+.initial-text {
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.initial-text {
+  color: hsl(303, 10%, 53%);
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.01rem;
+}
+
+
+/* Review Boxes */
+.review-boxes {
+  width: 50%;
+  margin: 0;
+  padding: 6% 3%;
+  padding-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxes {
+  padding: 0;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.boxes {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 2rem;
+  padding: 2%;
+  /* margin-top: 5%; */
+  /* width: 100%; */
+}
+
+.icon-star {
+  width: 40%;
+  display: flex;
+}
+
+.icon-star>img {
+  margin-left: 5%;
+}
+
+.icon-star-paragraph {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+
+.boxes:nth-child(2) {
+  margin-left: 3rem;
+}
+
+.boxes:nth-child(3) {
+    margin-left: 6rem;
+  }
+
+
+/* Customers Boxes */
+.customer-review-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 5%;
+  padding-right: 3%;
+  height: 40vh;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+}
+
+.customer-cards {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5%;
+  padding: 13%;
+  /* width: 100%; */ /* 100% keeps the margin both left and right equal*/
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 5rem;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  width: 32%;
+  padding: 3% 4%;
+  margin: 0;
+}
+
+
+
+.customer-cards:nth-child(2) {
+  /* align-self: center; */
+  margin-top: 20px;
+}
+
+.customer-cards:nth-child(3) {
+  /* align-self: flex-end; */
+  margin-top: 40px;
+}
+
+.customer-header {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.customer-cards-paragraph{
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+.customer-header>img {
+  border-radius: 50%;
+  width: 15%;
+  /* margin-right: 10%; */
+}
+
+.customer-header>h1 {
+  font-weight: bold;
+}
+
+.customer-header>h1>span{
+  color: hsl(333, 80%, 67%);
+  font-weight: normal;
+}
+
+
+
+
+/* colors to use */
+/* hsl(333, 80%, 67%) hsl(300, 43%, 22%) hsl(303, 10%, 53%)  hsl(300, 24%, 96%)  hsl(0, 0%, 100%)*/
+
+
+/* Mobile Layout */
+@media screen and (max-width: 375px) {
+
+  body {
+    background: url("images/bg-pattern-top-mobile.svg") no-repeat left top, url("images/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .initial-assessment, .customer-review-box, .boxes {
+  flex-direction: column;
+  }
+  .opening-segment, .review-boxes {
+  width: 100%;
+  }
+  .boxes {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 0 15px;
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  gap: 5px;
+  }
+
+  .icon-star {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  }
+  .boxes:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .boxes:nth-child(3) {
+      margin-left: 0;
+    }
+    
+    /* Introductory Text */
+    .opening-segment {
+    text-align: center;
+  }
+
+  .customer-review-box {
+    margin-bottom: 4rem;
+    margin-left: 0;
+  }
+  .customer-cards:nth-child(2) {
+    /* align-self: center; */
+    margin-top: 20px;
+  }
+
+  .customer-cards:nth-child(3) {
+    /* align-self: flex-end; */
+    margin-top: 20px;
+  }
+  .customer-cards {
+    width: 100%;
+    padding: 10%;
+    margin-left: 0;
+  } 
+}
+
